@@ -7,5 +7,5 @@ class TreeNode():
 
 if __name__ == "__main__":
     print("Executing the class directly of no use")
-else:
-    print("Tree node is printed")    
+# else:
+#     print("Tree node is printed")    
