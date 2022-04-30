@@ -6,7 +6,7 @@ import collections
 
 class TreeNode:
     def __init__(self, val):
-        self.val = val
+        self.data = val
         self.left = self.right = None
 
 # Function for level order traversal
@@ -34,7 +34,7 @@ def levelOrderTraversal(root):
         while currSize > 0:
             # Dequeue element
             currNode = queue.popleft()
-            currList.append(currNode.val)
+            currList.append(currNode.data)
             currSize -= 1
 
             # Check for left child
