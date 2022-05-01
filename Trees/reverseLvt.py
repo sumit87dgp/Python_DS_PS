@@ -1,6 +1,3 @@
-import imp
-
-from httpx import main
 from btree import TreeNode
 import collections
 
@@ -28,7 +25,7 @@ def reverseLvt(root):
     
 
     while mystack:
-        print(mystack.popleft().data)               
+        print(mystack.pop().data)               
 
 def main():
     root = TreeNode(1)
