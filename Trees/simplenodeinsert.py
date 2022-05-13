@@ -30,6 +30,19 @@ def insertNode(root, value):
             currNode.right = TreeNode(value)
             return root
 
+# def insertNode2(leftnode,rightnode,value):
+#     # if root is None:
+#     #     root = TreeNode(value)
+#     #     return root
+#     if leftnode.left is None:
+#         leftnode.left = TreeNode(value)
+#         return leftnode
+#     elif rightnode.right is None:
+#         rightnode.right = TreeNode(value)
+#         return rightnode
+#     else:
+#         insertNode2(leftnode.left,rightnode.right,value)
+
 def main():
     root = TreeNode(1)
     root.left = TreeNode(2)
