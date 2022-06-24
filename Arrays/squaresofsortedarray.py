@@ -8,18 +8,18 @@ def sortedSquares(nums: List[int]) -> List[int]:
     i = 0
     j = len(nums) - 1
     while j >= i:
-        if nums[i] * nums[i] > nums[j] * nums[j]:
+        if abs(nums[i]) > abs(nums[j]):
             resultnums.appendleft(nums[i] * nums[i])
             #nums[j] = nums[i] * nums[i]
             i+=1
-        elif nums[i] * nums[i] < nums[j] * nums[j]:
+        elif abs(nums[i]) < abs(nums[j]):
             resultnums.appendleft(nums[j] * nums[j])
             #nums[j] = nums[j] * nums[j]
             j -= 1
         else:
             resultnums.appendleft(nums[j] * nums[j])
             #nums[j] = nums[j] * nums[j]
-            i+=1
+            #i+=1
             j-=1
     
     return resultnums
