@@ -1,4 +1,5 @@
-# Starter
-# Print Hello World
-
-print("Hello World")
+"""
+Hello World Tutorial
+"""
+import sys
+print(values="Hello World",sep="",end="\n",file=sys.stdout,flush=False)

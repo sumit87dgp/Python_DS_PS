@@ -1,7 +1,16 @@
+"""
+    Dummer
+
+"""
 from typing import List
 
 
-def duplicateZeros(arr:List[int]):
+def duplicatezeros(arr:List[int]):
+    """Duplicate Zeros
+
+    Args:
+        arr (List[int]): _description_
+    """
     i = 0
     while i<=len(arr)-1:
         if arr[i] == 0:
@@ -11,7 +20,12 @@ def duplicateZeros(arr:List[int]):
         else:
             i+=1
 
-def duplicateZeros2(arr:List[int]) -> None:
+def duplicatezeros2(arr:List[int]) -> None:
+    """Shit
+
+    Args:
+        arr (List[int]): _description_
+    """
     result = []
     n = len(arr)
 
@@ -29,4 +43,5 @@ def duplicateZeros2(arr:List[int]) -> None:
 
 
 if __name__=="__main__":
-       duplicateZeros([1,0,2,3,0,4,5,0]) 
+    duplicatezeros([1,0,2,3,0,4,5,0])
+    
